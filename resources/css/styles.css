@@ -1,0 +1,256 @@
+
+/* Set up */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+
+}
+
+/*---------------------------------sử dụng lại------------------------------------------------*/
+.btn{
+    top:  -30px;
+    text-decoration: none;
+    color : white;
+    background-color: #e67e22;
+    padding: 15px 30px;
+    border-radius: 100px;/*button cạnh tròn*/
+    margin: 0px 10px; /*khoảng cách giữa 2 btn */
+
+    display: inline-block; /*cho các dòng trên cùng 1 hàng và chỉnh được width  */
+    text-align:  center;
+    transition:  all.3s;
+}
+.btn:hover,
+.btn:active{
+    background-color: #d35400;
+    
+}
+.clearfix::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.row
+{
+   max-width:  740px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/* header*/
+
+.logo{
+    width: 250px;
+    float: left;
+    margin-left: 70px ;
+    margin-top: -30px;
+
+}
+header{
+    background-image: url("../img/background1.jpg") ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.main-nav
+{
+    float: right;
+    list-style: none;/* tắt dấu trước list*/
+    margin-right: 50px;
+    margin-top: 55px;
+}
+
+.main-nav li a{
+    text-decoration: none;/* tắt gạch chân của thẻ a*/
+    
+    font-size: 110%;
+    font-weight: 700;
+    transition: border-bottom 0.7s;
+}
+.main-nav li{
+    display: inline-block;/* nằm cùng 1 dòng*/
+    margin-right: 30px;/* tạo khoảng cách của li*/
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #cccccc;
+}
+.heading-main-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 740px;
+}
+h1{
+    text-transform: uppercase;/* tất cả là in hoa*/
+    font-size:  200%; 
+    font-weight: 400;
+    letter-spacing:  3px; /* khoảng cách giữ các chữ */
+    word-spacing: 4px; /* khoảng cách giữa các từ */
+    color: gray;
+    margin-bottom: 50px;/* khoản cách giữa h1 và btn*/
+}
+/*-----------------------------------------------------------------------------------------------------*/
+.p-long
+{
+    text-align: center;
+    
+}
+h2
+{
+    text-align: center;
+    color: gray;
+    margin-bottom: 50px;
+}
+h3
+{
+    text-align: center;
+    color: gray;
+    line-height: 18;
+}
+p{
+   
+    margin-bottom: 200px;
+}
+.wrap
+{
+    position: absolute;
+    
+    left : 10%;
+    transform: translate(-10%,-10%);
+    display: flex;
+}
+.bt{
+    top:  -10px;
+    text-decoration: none;
+    color : white;
+    background-color: #e67e22;
+    padding: 5px 15px;
+    border-radius: 100px;/*button cạnh tròn*/
+    margin: 0px 2px; /*khoảng cách giữa 2 btn */
+
+    display: inline-block; /*cho các dòng trên cùng 1 hàng và chỉnh được width  */
+    text-align:  center;
+    transition:  all.3s;
+}
+.box{
+    position: relative;
+    width: 470px;
+    height: 200px;
+   
+    box-shadow:  0px 5px 30px #7f8c8d;
+    margin-right: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.img{
+    position: absolute;
+    z-index: 2;/* ẩn mấy cái list*/
+    margin-bottom: 50px;
+    
+
+}
+.box:hover .img img{
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+.list
+{
+    position: absolute;
+    z-index: 3;
+    top : 10%;
+    left : 10%;
+    transform: translate(-10%,-10%);
+    
+}
+.list ul a{
+    margin-top: 50px;
+   margin-left: 50px;
+    text-align:  center;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.box:hover .list ul a{
+    opacity: 1;
+}
+.box:hover .list ul a:nth-child(1)
+{
+    transition-delay: 0s;
+
+}
+.box:hover .list ul a:nth-child(2)
+{
+    transition-delay: 0.2s;
+    
+}
+
+
+
+.container {
+    
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 5px;
+}
+  input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.sticky{
+    background-color:gray;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 900;
+    width: 100%;
+    height:70px ;
+}
+.sticky .logo{
+    width: 170px;
+    margin-top: -10px;
+}
+.sticky .main-nav
+{
+    margin-top: 30px;
+}

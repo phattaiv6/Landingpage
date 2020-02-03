@@ -1,0 +1,39 @@
+@media only screen and (max-width:1200px)
+{
+html{
+    font-size: 16px;
+}
+
+}
+/*-------------------------------------------*/
+@media only screen and (max-width:1030px)
+{
+.logo{
+    margin-left: 10px;
+    width: 200px;
+}
+.main-nav
+{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.main-nav li{
+    margin-left: 10px;
+}
+.wrap 
+{
+    left : 0%;
+    transform: translate(-5%,-5%);
+}
+}
+/*-------------------------------------------*/
+@media only screen and (max-width:767px)
+{
+
+}
+/*-------------------------------------------*/
+@media only screen and (max-width:480px)
+{
+
+}
+/*-------------------------------------------*/
